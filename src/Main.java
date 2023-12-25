@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Consulta consultaCep = new Consulta();
+        Endereco novoEndereco = consultaCep.consultaCep("01001000");
+        System.out.println(novoEndereco);
     }
 }
